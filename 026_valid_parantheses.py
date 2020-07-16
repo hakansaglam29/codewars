@@ -11,3 +11,8 @@ def valid_parentheses(string):
 #         if char == ')': cnt -= 1
 #         if cnt < 0: return False
 #     return True if cnt == 0 else False
+
+# def valid_parentheses(string):
+#     string = "".join(ch for ch in string if ch in "()")
+#     while "()" in string: string = string.replace("()", "")
+#     return not string
