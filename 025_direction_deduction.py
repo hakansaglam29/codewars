@@ -18,6 +18,7 @@
 #                 i +=1
 #     return arr
 
+
 # opposite = {'NORTH': 'SOUTH', 'EAST': 'WEST', 'SOUTH': 'NORTH', 'WEST': 'EAST'}
 # def dirReduc(plan):
 #     new_plan = []
@@ -27,6 +28,7 @@
 #         else:
 #             new_plan.append(d)
 #     return new_plan
+
 
 def dirReduc(arr):
     dir = " ".join(arr)
