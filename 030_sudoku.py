@@ -13,27 +13,27 @@ board = [[5, 3, 4, 6, 7, 8, 9, 1, 2],
                                    [2, 8, 7, 4, 1, 9, 6, 3, 5],
                                    [3, 0, 0, 4, 8, 1, 1, 7, 9]]
 
-# def valid_solution(board):
-# dik = [list(map(lambda x:x[a],board)) for a in range(len(board))]
+def valid_solution(board):
+    dik = [list(map(lambda x:x[a],board)) for a in range(len(board))]
+    
 # dik = []
 # for a in range(len(board))
-#   dik.extend(list(map(lambda x:x[a],board)))
-# k_dokuz=[list(map(lambda x:x[i:i+3],board[k:k+3])) for i in range(0,9,3) for k in range(0,9,3)]
+#   dik.extend(list(map(lambda x:x[a],board))) 
+  
+    k_dokuz=[list(map(lambda x:x[i:i+3],board[k:k+3])) for i in range(0,9,3)\
+         for k in range(0,9,3)]
+    
 # k_dokuz = []
 # for k in range(0,9,3):   
 #     for i in range(0,9,3):
-#         k_dokuz.extend(list(map(lambda x:x[i:i+3],board[k:k+3])))
-# k_dokuz= [i[0]+i[1]+i[2] for i in k_dokuz]
+#         k_dokuz.extend(list(map(lambda x:x[i:i+3],board[k:k+3])))    
+
+    k_dokuz= [i[0]+i[1]+i[2] for i in k_dokuz]
+    
 # y_k_dokuz = []
 # for i in k_dokuz:
-#    y_k_dokuz += [i[0]+i[1]+i[2]]
-
-
-def valid_solution(board):
-    dik = [list(map(lambda x:x[a],board)) for a in range(len(board))]
-    k_dokuz=[list(map(lambda x:x[i:i+3],board[k:k+3])) for i in range(0,9,3)\
-         for k in range(0,9,3)]
-    k_dokuz= [i[0]+i[1]+i[2] for i in k_dokuz]
+#    y_k_dokuz += [i[0]+i[1]+i[2]]   
+ 
     for i in board,dik,k_dokuz:
         for k in i:
             if set(k)!={1,2,3,4,5,6,7,8,9}:
