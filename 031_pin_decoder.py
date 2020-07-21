@@ -1,4 +1,4 @@
-from itertools import product
+from itertools import product # Bu modül elemanlari kartezyen sekilde bir araya getiriyor.
 
 def get_pins(observed):
     decoder= [("0","8"),("1","2","4"),["2","1","3","5"],("3","2","6"),\
@@ -51,11 +51,5 @@ def get_pins(observed):
 #        '9': ('6', '8', '9'), '0': ('0', '8')}
 
 # observed = "12"
-# # def get_pins(observed):
-# #     return [''.join(a) for a in product(*(PIN[i] for i in observed))]
-# # print(get_pins("12"))
-
-# k = list(product(*(PIN[i] for i in observed)))
-# l = [*(PIN[i] for i in observed)]
-# print(l)
-# print(k)
+# def get_pins(observed):
+#     return [''.join(a) for a in product(*(PIN[i] for i in observed))]
