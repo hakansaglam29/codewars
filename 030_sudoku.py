@@ -15,11 +15,10 @@ board = [[5, 3, 4, 6, 7, 8, 9, 1, 2],
 
 def valid_solution(board):
     dik = [list(map(lambda x:x[a],board)) for a in range(len(board))]
-    
 # dik = []
 # for a in range(len(board))
 #   dik.extend(list(map(lambda x:x[a],board))) 
-  
+    print(dik)
     k_dokuz=[list(map(lambda x:x[i:i+3],board[k:k+3])) for i in range(0,9,3)\
          for k in range(0,9,3)]
     
@@ -27,17 +26,17 @@ def valid_solution(board):
 # for k in range(0,9,3):   
 #     for i in range(0,9,3):
 #         k_dokuz.extend(list(map(lambda x:x[i:i+3],board[k:k+3])))    
-
+    print(k_dokuz)
     k_dokuz= [i[0]+i[1]+i[2] for i in k_dokuz]
     
 # y_k_dokuz = []
 # for i in k_dokuz:
 #    y_k_dokuz += [i[0]+i[1]+i[2]]   
  
-    for i in board,dik,k_dokuz:
-        for k in i:
-            if set(k)!={1,2,3,4,5,6,7,8,9}:
-                return False
-                break
+    for i in board,dik,k_dokuz: 
+        for k in i: 
+            if set(k)!={1,2,3,4,5,6,7,8,9}: return False; break
     return True
 # print(valid_solution(board))
+
+print(valid_solution(board))
