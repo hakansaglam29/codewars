@@ -1,4 +1,6 @@
-Write a function that will solve a 9x9 Sudoku puzzle. The function will take one argument consisting of the 2D puzzle array, with the value 0 representing an unknown square.
+Write a function that will solve a 9x9 Sudoku puzzle. 
+The function will take one argument consisting of the 2D puzzle array, 
+with the value 0 representing an unknown square.
 
 
 
